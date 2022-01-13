@@ -1,8 +1,10 @@
 new file
 *Italic*
 **Bold**
-# Heading 1
-## Heading 2
+
+
+# **Heading 1**
+## **Heading 2**
 [Link](http://a.com)
 ![Image](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 > Blockquote
@@ -14,11 +16,13 @@ new file
 3. Three
 
 >
+---
+## **Heading 2**
 
 Horizontal rule:
 
 ---
-`Inline code` with backticks
+
 ```
 # code block
 print '3 backticks or'
