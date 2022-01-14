@@ -1,3 +1,5 @@
+ <font size="12"> Lab Report </font>
+
 **Table of Contents:**
 - [Installing VScode](#installing-vscode)
 - [Remotely Connecting](#remotely-connecting)
@@ -23,8 +25,6 @@
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
-
-* <span style="color:red"> *whole file fixed*</span>
 
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
