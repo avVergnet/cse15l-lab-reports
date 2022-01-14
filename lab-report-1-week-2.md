@@ -1,4 +1,4 @@
- <font size="12"> Lab Report </font>
+ <font size="12"> Lab Report Week 1 and 2</font>
 
 **Table of Contents:**
 - [Installing VScode](#installing-vscode)
@@ -9,6 +9,9 @@
 - [Trying Some Commands](#trying-some-commands)
 - [Moving Files with scp](#moving-files-with-scp)
 - [Setting an SSH Key](#setting-an-ssh-key)
+  - [Creating key:](#creating-key)
+  - [Extra step for Windows Computer:](#extra-step-for-windows-computer)
+  - [Adding key to computer and remote host:](#adding-key-to-computer-and-remote-host)
 - [Optimizing Remote Running](#optimizing-remote-running)
 
 # Installing VScode
@@ -165,6 +168,65 @@ cs15lwi22anb
 ```
 
 # Setting an SSH Key
+
+## Creating key:
+
+* To save some time we will set up an SSH Key to not have to type in the password everytime we log in.
+* Start by typing this command on the local computer:
+
+```
+ssh-keygen
+```
+
+* It will generate a key pair and you will be prompted to input in which file to save the key:
+
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\avver/.ssh/id_rsa): \Users\avver/.ssh/id_rsa
+```
+
+* You will be asked for a passphrase input it twice and remember it for later.
+
+```
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+## Extra step for Windows Computer:
+
+Go to https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation to follow along
+
+1. Open Powershell using the administrator once again.
+2. Run the following code:
+
+```
+Get-Service ssh-agent | Set-Service -StartupType Manual
+
+Start-Service ssh-agent
+
+Get-Service ssh-agent
+
+ssh-add
+```
+
+## Adding key to computer and remote host:
+
 
 
 # Optimizing Remote Running
