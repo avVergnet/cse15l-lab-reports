@@ -44,7 +44,41 @@ State : Installed
 ---
 ### Finding your course specific account
 * https://sdacs.ucsd.edu/~icc/index.php
+* The page should look like this, input your username and  Student ID
+![Image](ssForLab2.PNG)
+* Here you can find your username and set your password. For this class it will look something like this: cs15lwi22***@ieng6.ucsd.edu
+* The stars will be your own custom letters.
+---
+### Connecting
+* Open Visual Studio and hover over Terminal and click New Terminal
+* Paste the following command but replacing the stars with your own letters.
+```
+$ ssh cs15lwi22***@ieng6.ucsd.edu
+```
+* As it is the first time logging in you will receive the following message. Just type yes then hit enter.
+```
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+* It will then ask you for your password. You will not see it appear as you type.
+``` 
+Password: 
+Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
+quota: No filesystem specified.
+Hello cs15lwi22zz, you are currently logged into ieng6-203.ucsd.edu
 
+You are using 0% CPU on this system
+
+Cluster Status 
+Hostname     Time    #Users  Load  Averages  
+ieng6-201   23:25:01   0  0.08,  0.17,  0.11
+ieng6-202   23:25:01   1  0.09,  0.15,  0.11
+ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+
+Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
+```
+* Type in the one you got above and you are connected!
 
 
 ## Trying Some Commands
