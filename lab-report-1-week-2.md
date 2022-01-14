@@ -225,6 +225,9 @@ Get-Service ssh-agent
 ssh-add
 ```
 
+* Should look like this: 
+![Image](ssForLab5.PNG)
+
 ## Adding key to computer and remote host:
 
 * This created two new files stored in our .ssh directory locally. We created:
