@@ -1,13 +1,10 @@
-# Lab report
+# Table of Contents
+1. [Installing VScode](#Installing-VScode)
+2. [Remotely Connecting](#Remotely-Connecting)
+3. [Trying Some Commands](#Trying-Some-Commands)
+4. [Moving Files with scp](#Moving-Files-with-scp)
 
-## Table of Contents
-1. [Installing VScode](##Installing-VScode)
-2. [Remotely Connecting](##Remotely-Connecting)
-3. [Trying Some Commands](##Trying-Some-Commands)
-4. [Moving Files with scp](##Moving-Files-with-scp)
-
-
-## Installing VScode
+# Installing VScode
 
 * Go to [VS Code Official Site](https://code.visualstudio.com)
 * Click on the blue download button at the top right
@@ -15,8 +12,8 @@
 * This will lead you to the dowload page, choose you OS.
 * Double click the .exe file.
 
-## Remotely Connecting 
----
+# Remotely Connecting 
+
 **Installing OpenSSH**
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
@@ -58,7 +55,7 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : Installed
 ```
 
----
+
 **Finding your course specific account**
 * Got to https://sdacs.ucsd.edu/~icc/index.php
 * The page should look like this, input your username and  Student ID
@@ -66,7 +63,7 @@ State : Installed
 * Here you can find your username and set your password. For this class it will look something like this: cs15lwi22***@ieng6.ucsd.edu
 * The stars will be your own custom letters.
 
----
+
 **Connecting**
 * Open Visual Studio and hover over Terminal and click New Terminal
 * Paste the following command but replacing the stars with your own letters.
@@ -104,9 +101,9 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 
 * You are connected!
 
----
 
-## Trying Some Commands
+
+# Trying Some Commands
 
 Now to run some commands locally and remotely:
 * pwd (prints work directory)
@@ -123,7 +120,7 @@ Now to run some commands locally and remotely:
 ![Image](ssForLab3.PNG)
 
 
-## Moving Files with scp
+# Moving Files with scp
 
 * The next part will show you how to move one or more files from your local computer to a remote one.
 * This will be done using the scp command. This command should always be run from the local computer.
@@ -162,5 +159,5 @@ cs15lwi22anb
 /home/linux/ieng6/cs15lwi22/cs15lwi22anb
 ```
 
-## Setting an SSH Key
-## Optimizing Remote Running
+# Setting an SSH Key
+# Optimizing Remote Running
