@@ -15,7 +15,7 @@
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
 
-* <span style="color:red"> *version 2*</span>
+* <span style="color:red"> *whole file fixed*</span>
 
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
@@ -32,6 +32,7 @@ State : NotPresent
 ```
 
 * Run the followings commands to download the Client or Server depending on which one was not present
+
 ```
 # Install the OpenSSH Client
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
@@ -39,7 +40,9 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 # Install the OpenSSH Server
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
+
 * After this, the first command should output this:
+
 ```
 Name  : OpenSSH.Client~~~~0.0.1.0
 State : Installed
@@ -47,6 +50,7 @@ State : Installed
 Name  : OpenSSH.Server~~~~0.0.1.0
 State : Installed
 ```
+
 ---
 ### Finding your course specific account
 * https://sdacs.ucsd.edu/~icc/index.php
@@ -58,16 +62,21 @@ State : Installed
 ### Connecting
 * Open Visual Studio and hover over Terminal and click New Terminal
 * Paste the following command but replacing the stars with your own letters.
+
 ```
 $ ssh cs15lwi22***@ieng6.ucsd.edu
 ```
+
 * As it is the first time logging in you will receive the following message. Just type yes then hit enter.
+
 ```
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+
 ```
 * It will then ask you for your password. You will not see it appear as you type.
+
 ``` 
 Password: 
 Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
@@ -84,6 +93,7 @@ ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 
 Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 ```
+
 * Type in the one you got above and you are connected!
 
 ## Trying Some Commands
