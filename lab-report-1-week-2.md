@@ -10,7 +10,7 @@
 
 ## Remotely Connecting 
 ---
-### Installing OpenSSH
+**Installing OpenSSH**
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
@@ -52,14 +52,15 @@ State : Installed
 ```
 
 ---
-### Finding your course specific account
-* https://sdacs.ucsd.edu/~icc/index.php
+**Finding your course specific account**
+* Got to https://sdacs.ucsd.edu/~icc/index.php
 * The page should look like this, input your username and  Student ID
 ![Image](ssForLab2.PNG)
 * Here you can find your username and set your password. For this class it will look something like this: cs15lwi22***@ieng6.ucsd.edu
 * The stars will be your own custom letters.
+
 ---
-### Connecting
+**Connecting**
 * Open Visual Studio and hover over Terminal and click New Terminal
 * Paste the following command but replacing the stars with your own letters.
 
@@ -73,9 +74,9 @@ $ ssh cs15lwi22***@ieng6.ucsd.edu
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-
 ```
-* It will then ask you for your password. You will not see it appear as you type.
+
+* It will then ask you for your password, type in the one you got above. You will not see it appear as you type.
 
 ``` 
 Password: 
@@ -94,9 +95,12 @@ ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 ```
 
-* Type in the one you got above and you are connected!
+* You are connected!
+
+---
 
 ## Trying Some Commands
+
 ## Moving Files with scp
 ## Setting an SSH Key
 ## Optimizing Remote Running
