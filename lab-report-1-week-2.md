@@ -1,7 +1,9 @@
-# Table of Contents
-- [Table of Contents](#table-of-contents)
+**Table of Contents:**
 - [Installing VScode](#installing-vscode)
 - [Remotely Connecting](#remotely-connecting)
+  - [Installing OpenSSH](#installing-openssh)
+  - [Finding your course specific account](#finding-your-course-specific-account)
+  - [Connecting](#connecting)
 - [Trying Some Commands](#trying-some-commands)
 - [Moving Files with scp](#moving-files-with-scp)
 - [Setting an SSH Key](#setting-an-ssh-key)
@@ -17,7 +19,7 @@
 
 # Remotely Connecting 
 
-**Installing OpenSSH**
+## Installing OpenSSH
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
@@ -59,7 +61,7 @@ State : Installed
 ```
 
 
-**Finding your course specific account**
+## Finding your course specific account
 * Got to https://sdacs.ucsd.edu/~icc/index.php
 * The page should look like this, input your username and  Student ID
 ![Image](ssForLab2.PNG)
@@ -67,7 +69,7 @@ State : Installed
 * The stars will be your own custom letters.
 
 
-**Connecting**
+## Connecting
 * Open Visual Studio and hover over Terminal and click New Terminal
 * Paste the following command but replacing the stars with your own letters.
 
