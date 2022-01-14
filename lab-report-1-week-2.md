@@ -15,12 +15,14 @@
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
 
-* <span style="color:red"> *fixed code is below*</span>
+* <span style="color:red"> *version 2*</span>
 
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
+
 * If it is not installed, this should be the output:
+
 ```
 Name  : OpenSSH.Client~~~~0.0.1.0
 State : NotPresent
@@ -28,6 +30,7 @@ State : NotPresent
 Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 ```
+
 * Run the followings commands to download the Client or Server depending on which one was not present
 ```
 # Install the OpenSSH Client
