@@ -108,9 +108,9 @@ Now to run some commands locally and remotely:
 * cd ~ (brings you back to home path)
 * cd (change directory)
 * ls (prints what is inside the directory)
-* ls -lat
+* ls -lat (prints what is inside the directory with a lot of detail.)
 * ls -a (prints everything what is inside the directory)
-* cat
+* cat (opens selected document)
 
 **Example:**
 ![Image](ssForLab3.PNG)
@@ -134,15 +134,26 @@ class WhereAmI {
 }
 ```
 
-* Run it using<span style="background-color: #333333"> javac </span>and<span style="background-color: #333333"> java </span> on your computer. What do you see? (If you don’t have java installed on your computer, skip this step).
-* Then, in the terminal from the directory where you made this file, run this command (as usually, using your username):
+* Run it using<span style="background-color: #333333"> javac </span>and<span style="background-color: #333333"> java </span> on your computer.
+* Then, in the terminal from the directory where you made this file, run this command replacing the stars with you own unique letters
 
 ```
-scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+scp WhereAmI.java cs15lwi22***@ieng6.ucsd.edu:~/
 ```
 
-* You should be prompted for a password just like when you log in with ssh. If you get errors, ask your group members for help! You’ll all learn.
-* Then, log into ieng6 with ssh again, and use ls. You should see the file there in your home directory! Now you can run it on the ieng6 computer using javac and java. Since java is installed on the server, everyone should be able to run it no matter the client.
+* It will ask for you password. Enter it. Now log in to ssh and press ls to see the moved files
+![Image](ssForLab4.PNG)
+* Now complie WhereAmI.java using the javac command and then run it using the java command.
+* This codes prints out where it is running from. Since we are running it from the remote computers in UCSD it should say something like this:
+
+```
+[cs15lwi22anb@ieng6-203]:~:77$ javac WhereAmI.java
+[cs15lwi22anb@ieng6-203]:~:78$ java WhereAmI
+Linux
+cs15lwi22anb
+/home/linux/ieng6/cs15lwi22/cs15lwi22anb
+/home/linux/ieng6/cs15lwi22/cs15lwi22anb
+```
 
 ## Setting an SSH Key
 ## Optimizing Remote Running
