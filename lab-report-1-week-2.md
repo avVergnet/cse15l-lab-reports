@@ -117,5 +117,32 @@ Now to run some commands locally and remotely:
 
 
 ## Moving Files with scp
+
+* The next part will show you how to move one or more files from your local computer to a remote one.
+* This will be done using the scp command. This command should always be run from the local computer.
+* Create a file called: <span style="background-color: #333333">WhereAmI.java</span>
+ 
+
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+* Run it using<span style="background-color: #333333"> javac </span>and<span style="background-color: #333333"> java </span> on your computer. What do you see? (If you don’t have java installed on your computer, skip this step).
+* Then, in the terminal from the directory where you made this file, run this command (as usually, using your username):
+
+```
+scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+```
+
+* You should be prompted for a password just like when you log in with ssh. If you get errors, ask your group members for help! You’ll all learn.
+* Then, log into ieng6 with ssh again, and use ls. You should see the file there in your home directory! Now you can run it on the ieng6 computer using javac and java. Since java is installed on the server, everyone should be able to run it no matter the client.
+
 ## Setting an SSH Key
 ## Optimizing Remote Running
