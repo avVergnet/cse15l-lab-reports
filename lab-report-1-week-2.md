@@ -1,8 +1,11 @@
 # Table of Contents
-1. [Installing VScode](#Installing-VScode)
-2. [Remotely Connecting](#Remotely-Connecting)
-3. [Trying Some Commands](#Trying-Some-Commands)
-4. [Moving Files with scp](#Moving-Files-with-scp)
+- [Table of Contents](#table-of-contents)
+- [Installing VScode](#installing-vscode)
+- [Remotely Connecting](#remotely-connecting)
+- [Trying Some Commands](#trying-some-commands)
+- [Moving Files with scp](#moving-files-with-scp)
+- [Setting an SSH Key](#setting-an-ssh-key)
+- [Optimizing Remote Running](#optimizing-remote-running)
 
 # Installing VScode
 
@@ -160,4 +163,6 @@ cs15lwi22anb
 ```
 
 # Setting an SSH Key
+
+
 # Optimizing Remote Running
