@@ -101,6 +101,21 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 
 ## Trying Some Commands
 
+Now to run some commands locally and remotely:
+* pwd (prints work directory)
+* mkdir (makes a new directory)
+* cp (copy)
+* cd ~ (brings you back to home path)
+* cd (change directory)
+* ls (prints what is inside the directory)
+* ls -lat
+* ls -a (prints everything what is inside the directory)
+* cat
+
+**Example:**
+![Image](ssForLab3.PNG)
+
+
 ## Moving Files with scp
 ## Setting an SSH Key
 ## Optimizing Remote Running
