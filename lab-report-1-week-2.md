@@ -1,5 +1,12 @@
 # Lab report
 
+## Table of Contents
+1. [Installing VScode](##Installing-VScode)
+2. [Remotely Connecting](##Remotely-Connecting)
+3. [Trying Some Commands](##Trying-Some-Commands)
+4. [Moving Files with scp](##Moving-Files-with-scp)
+
+
 ## Installing VScode
 
 * Go to [VS Code Official Site](https://code.visualstudio.com)
@@ -120,7 +127,7 @@ Now to run some commands locally and remotely:
 
 * The next part will show you how to move one or more files from your local computer to a remote one.
 * This will be done using the scp command. This command should always be run from the local computer.
-* Create a file called: <span style="background-color: #333333">WhereAmI.java</span>
+* Create a file called: <span style="background-color: #777777">WhereAmI.java</span>
  
 
 ```
@@ -134,7 +141,7 @@ class WhereAmI {
 }
 ```
 
-* Run it using<span style="background-color: #333333"> javac </span>and<span style="background-color: #333333"> java </span> on your computer.
+* Run it using<span style="background-color: #777777"> javac </span>and<span style="background-color: #777777"> java </span> on your computer.
 * Then, in the terminal from the directory where you made this file, run this command replacing the stars with you own unique letters
 
 ```
