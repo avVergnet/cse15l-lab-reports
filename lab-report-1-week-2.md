@@ -15,6 +15,8 @@
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
 
+* <span style="color:red"> *fixed code is below*</span>
+
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
