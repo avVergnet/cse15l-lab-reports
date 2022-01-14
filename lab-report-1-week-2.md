@@ -132,7 +132,7 @@ Now to run some commands locally and remotely:
 
 * The next part will show you how to move one or more files from your local computer to a remote one.
 * This will be done using the scp command. This command should always be run from the local computer.
-* Create a file called: <span style="background-color: #777777">WhereAmI.java</span>
+* Create a file called: <span style="background-color: #D3D3D3">WhereAmI.java</span>
  
 
 ```
@@ -146,7 +146,7 @@ class WhereAmI {
 }
 ```
 
-* Run it using<span style="background-color: #777777"> javac </span>and<span style="background-color: #777777"> java </span> on your computer.
+* Run it using<span style="background-color: #D3D3D3"> javac </span>and<span style="background-color: #D3D3D3"> java </span> on your computer.
 * Then, in the terminal from the directory where you made this file, run this command replacing the stars with you own unique letters
 
 ```
@@ -227,21 +227,24 @@ ssh-add
 
 ## Adding key to computer and remote host:
 
-* This created two new files on your system; the private key (in a file id_rsa) and the public key (in a file id_rsa.pub), stored in the .ssh directory on your computer.
-
-* Now we need to copy the public (not the private) key to the .ssh directory of your user account on the server.
+* This created two new files stored in our .ssh directory locally. We created:
+* * The private key (in a file id_rsa) 
+* * The public key (in a file id_rsa.pub)
+* Now we need to copy the **public** key to the .ssh directory on the server.
+* Log in to remote computer.
+* Make a new directory called .ssh using the command
 
 ```
-$ ssh cs15lwi22zz@ieng6.ucsd.edu
-<Enter Password>
-# now on server
-$ mkdir .ssh
-$ <logout>
-# back on client
-$ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
-# You use your username and the path you saw in the command above
+mkdir .ssh
 ```
 
-Once you do this, you should be able to ssh or scp from this client to the server without entering your password.
+* Logout using <span style="background-color: #D3D3D3">crtl + d</span> or by typing <span style="background-color: #D3D3D3">logout</span>
+* Enter the following command locally by changing the path and username:
+
+```
+scp /Users/joe/.ssh/id_rsa.pub cs15lwi22***@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+
+* You can now use ssh and scp between this computer and the server without needing to enter your passwrod.
 
 # Optimizing Remote Running
