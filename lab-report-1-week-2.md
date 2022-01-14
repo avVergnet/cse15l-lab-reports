@@ -1,20 +1,20 @@
  <font size="12"> Lab Report Week 1 and 2</font>
 
 **Table of Contents:**
-- [Installing VScode](#installing-vscode)
-- [Remotely Connecting](#remotely-connecting)
-  - [Installing OpenSSH](#installing-openssh)
-  - [Finding your course specific account](#finding-your-course-specific-account)
-  - [Connecting](#connecting)
-- [Trying Some Commands](#trying-some-commands)
-- [Moving Files with scp](#moving-files-with-scp)
-- [Setting an SSH Key](#setting-an-ssh-key)
-  - [Creating key:](#creating-key)
-  - [Extra step for Windows Computer:](#extra-step-for-windows-computer)
-  - [Adding key to computer and remote host:](#adding-key-to-computer-and-remote-host)
-- [Optimizing Remote Running](#optimizing-remote-running)
+- [1. Installing VScode](#1-installing-vscode)
+- [2. Remotely Connecting](#2-remotely-connecting)
+  - [2.1. Installing OpenSSH](#21-installing-openssh)
+  - [2.2. Finding your course specific account](#22-finding-your-course-specific-account)
+  - [2.3. Connecting](#23-connecting)
+- [3. Trying Some Commands](#3-trying-some-commands)
+- [4. Moving Files with scp](#4-moving-files-with-scp)
+- [5. Setting an SSH Key](#5-setting-an-ssh-key)
+  - [5.1. Creating key:](#51-creating-key)
+  - [5.2. Extra step for Windows Computer:](#52-extra-step-for-windows-computer)
+  - [5.3. Adding key to computer and remote host:](#53-adding-key-to-computer-and-remote-host)
+- [6. Optimizing Remote Running](#6-optimizing-remote-running)
 
-# Installing VScode
+# 1. Installing VScode
 
 * Go to [VS Code Official Site](https://code.visualstudio.com)
 * Click on the blue download button at the top right
@@ -22,9 +22,9 @@
 * This will lead you to the dowload page, choose you OS.
 * Double click the .exe file.
 
-# Remotely Connecting 
+# 2. Remotely Connecting 
 
-## Installing OpenSSH
+## 2.1. Installing OpenSSH
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
@@ -64,7 +64,7 @@ State : Installed
 ```
 
 
-## Finding your course specific account
+## 2.2. Finding your course specific account
 * Got to https://sdacs.ucsd.edu/~icc/index.php
 * The page should look like this, input your username and  Student ID
 ![Image](ssForLab2.PNG)
@@ -72,7 +72,7 @@ State : Installed
 * The stars will be your own custom letters.
 
 
-## Connecting
+## 2.3. Connecting
 * Open Visual Studio and hover over Terminal and click New Terminal
 * Paste the following command but replacing the stars with your own letters.
 
@@ -111,7 +111,7 @@ Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 
 
 
-# Trying Some Commands
+# 3. Trying Some Commands
 
 Now to run some commands locally and remotely:
 * pwd (prints work directory)
@@ -128,7 +128,7 @@ Now to run some commands locally and remotely:
 ![Image](ssForLab3.PNG)
 
 
-# Moving Files with scp
+# 4. Moving Files with scp
 
 * The next part will show you how to move one or more files from your local computer to a remote one.
 * This will be done using the scp command. This command should always be run from the local computer.
@@ -167,9 +167,9 @@ cs15lwi22anb
 /home/linux/ieng6/cs15lwi22/cs15lwi22anb
 ```
 
-# Setting an SSH Key
+# 5. Setting an SSH Key
 
-## Creating key:
+## 5.1. Creating key:
 
 * To save some time we will set up an SSH Key to not have to type in the password everytime we log in.
 * Start by typing this command on the local computer:
@@ -208,7 +208,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-## Extra step for Windows Computer:
+## 5.2. Extra step for Windows Computer:
 
 Go to https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation to follow along
 
@@ -226,9 +226,10 @@ ssh-add
 ```
 
 * Should look like this: 
+
 ![Image](ssForLab5.PNG)
 
-## Adding key to computer and remote host:
+## 5.3. Adding key to computer and remote host:
 
 * This created two new files stored in our .ssh directory locally. We created:
 * * The private key (in a file id_rsa) 
@@ -250,4 +251,5 @@ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22***@ieng6.ucsd.edu:~/.ssh/authorized_key
 
 * You can now use ssh and scp between this computer and the server without needing to enter your passwrod.
 
-# Optimizing Remote Running
+# 6. Optimizing Remote Running
+
