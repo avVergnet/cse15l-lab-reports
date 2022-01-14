@@ -253,3 +253,18 @@ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22***@ieng6.ucsd.edu:~/.ssh/authorized_key
 
 # 6. Optimizing Remote Running
 
+* To run code more efficiently you can type in same line by seperating with semicolons:
+
+```
+cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+```
+
+* You can also do commands from local onto remote by adding quotation marks around it:
+
+```
+ssh cs15lwi22***@ieng6.ucsd.edu "ls"
+```
+
+Example:
+
+![Image](ssForLab6.PNG)
