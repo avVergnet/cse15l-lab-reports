@@ -14,6 +14,7 @@
 * You can do so by following the [guide](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) along.
 * Start by checking if OpenSSH is already installed
 * Open Powershell as the administrator and run the following command:
+
 ```
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
@@ -79,7 +80,6 @@ ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 Sun Jan 02, 2022 11:28pm - Prepping cs15lwi22
 ```
 * Type in the one you got above and you are connected!
-
 
 ## Trying Some Commands
 ## Moving Files with scp
