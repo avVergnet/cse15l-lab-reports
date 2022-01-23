@@ -210,7 +210,7 @@ The key's randomart image is:
 
 ## 5.2. Extra step for Windows Computer:
 
-Go to https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation to follow along
+Click [here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) to follow along
 
 1. Open Powershell using the administrator once again.
 2. Run the following code:
