@@ -65,7 +65,7 @@ State : Installed
 
 
 ## 2.2. Finding your course specific account
-* Got to this [link](https://sdacs.ucsd.edu/~icc/index.php)
+* Go to this [link](https://sdacs.ucsd.edu/~icc/index.php)
 * The page should look like this, input your username and  Student ID
 ![Image](ssForLab2.PNG)
 * Here you can find your username and set your password. For this class it will look something like this: cs15lwi22***@ieng6.ucsd.edu
