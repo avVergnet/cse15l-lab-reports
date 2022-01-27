@@ -1,4 +1,4 @@
- <font size="12"> Lab Report Week 1 and 2</font>
+ <font size="12"> Lab Report 1 Week 2</font>
 
 **Table of Contents:**
 - [1. Installing VScode](#1-installing-vscode)
