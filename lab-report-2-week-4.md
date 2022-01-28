@@ -27,7 +27,7 @@
 
 # Change #3 to fix a bug
 
-* Screenshot of the code change diff from Github: ![Image](ss4Lab8.PNG)
+* Screenshot of the code change diff from Github: ![Image](ss4lab8.PNG)
 
 * Link to the test file for a failure-inducing input that prompted you to make that change:
   * [Test file #5](test-file5.md) contained the failure-inducing input. 
