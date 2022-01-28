@@ -22,7 +22,7 @@
 * Sympton of failure-inducing input by showing the output of running the file at the command line for version where it was failling: ![Image](ss4Lab5.PNG)
 
 * Relationship between the bug, the symptom, and the failure-inducing input.
-  * The problem is that the way embeding images and links in markdown is very similar. The only difference is the exclamation mark in front of it. The bug is that when our program reads a markdown file with an image in it, it should not consider it as a link. We know this from the symptom seen above in the command line. We are expecting an empty list but are getting page.com as a link. This happened becuase [test file #6](test-file6.md) contained an image and our program read it as a link.
+  * The problem is that the way embeding images and links in markdown is very similar. The only difference is the exclamation mark in front of it. The bug is that when our program reads a markdown file with an image in it, it should not consider it as a link. We know this from the symptom seen above in the command line. We are expecting an empty list but are getting page.com as a link. This happened becuase [test file #6](test-file6.md) contained an image and our program read it as a link. To fix this we added an "if" statement that checks if the opening bracket is the first character in the line if it is not then it checks if before it comes an exclamation mark.
 
 
 # Change #3 to fix a bug
