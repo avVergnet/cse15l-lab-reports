@@ -27,3 +27,12 @@
 
 # Change #3 to fix a bug
 
+* Screenshot of the code change diff from Github: ![Image](ss4Lab6.PNG)
+
+* Link to the test file for a failure-inducing input that prompted you to make that change:
+  * [Test file #5](test-file5.md) contained the failure-inducing input. 
+
+* Sympton of failure-inducing input by showing the output of running the file at the command line for version where it was failling: ![Image](ss4Lab7.PNG)
+
+* Relationship between the bug, the symptom, and the failure-inducing input.
+  * 
