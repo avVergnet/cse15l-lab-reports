@@ -27,7 +27,7 @@
 
 # Change #3 to fix a bug
 
-* Screenshot of the code change diff from Github: ![Image](ss4Lab6.PNG)
+* Screenshot of the code change diff from Github: ![Image](ss4Lab8.PNG)
 
 * Link to the test file for a failure-inducing input that prompted you to make that change:
   * [Test file #5](test-file5.md) contained the failure-inducing input. 
@@ -35,4 +35,4 @@
 * Sympton of failure-inducing input by showing the output of running the file at the command line for version where it was failling: ![Image](ss4Lab7.PNG)
 
 * Relationship between the bug, the symptom, and the failure-inducing input.
-  * 
+  * This bug was that there was text in between the closing bracket and the opening parenthesis. The symptom showed us that our algorithm counted it as a link in [test file #5](test-file5.md) which was our failure-inducing input. We expected to get no link. We fixed this by adding a markdwon check who checks wether the character that is after the closing bracket is an opening parenthesis.
