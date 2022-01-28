@@ -5,7 +5,7 @@
 * Screenshot of the code change diff from Github: ![Image](ss4lab1.PNG)
 
 * Link to the test file for a failure-inducing input that prompted you to make that change:
-  * [test file #3](test-file3.md) contained the failure-inducing input. 
+  * [Test file #3](test-file3.md) and [test file #4](test-file4.md) contained the failure-inducing input. 
 
 * Sympton of failure-inducing input by showing the output of running the file at the command line for version where it was failling: ![Image](ss4lab2.PNG)
 
@@ -17,7 +17,7 @@
 * Screenshot of the code change diff from Github: ![Image](ss4Lab4.PNG)
 
 * Link to the test file for a failure-inducing input that prompted you to make that change:
-  * [test file #6](test-file6.md) contained the failure-inducing input. 
+  * [Test file #6](test-file6.md) contained the failure-inducing input. 
 
 * Sympton of failure-inducing input by showing the output of running the file at the command line for version where it was failling: ![Image](ss4Lab5.PNG)
 
