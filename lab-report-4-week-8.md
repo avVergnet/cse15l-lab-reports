@@ -5,6 +5,11 @@
 
 [The mdp repo that I reviewed](https://github.com/Stocktocon/markdown-parse)
 
+testing these
+[snip1](snip1.md)
+[snip2](snip2.md)
+[snip3](snip3.md)
+
 
 # Snippet 1:
 * What it should produce:
@@ -138,12 +143,11 @@ And there's still some more text after that.
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
         
-        TYPE ANSWER HERE
+_In my opinoin I could add a change in my program less than 10 lines that would fix the issue. In my program, the first line is recognized but shouldn't be and the opposite for the fourth line. The second line could be easily fixed by transforming the backticks with a %60. The first and fourth line are related and can be overcome by adding checkers for when a backtick is opened and when one is closed. If one is opened outside then closed inside the brackets, this would not count as a link but if one is opened inside and closed inside the brackets anything in the backticks should be counted as a string._
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
 
-        TYPE ANSWER HERE
+_For the second snip this one could also be fixed using less than 10 lines. My program had troubles with the second and third line of the snipet. These two issues can be fixed by adding a counter which increases when a bracket is opened and decreases when it is closed. If one of the type is closed when one of the other type was just opened, this should not make a link. This counter could be added for the brackets and the parenthesis._
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
-        TYPE ANSWER HERE
