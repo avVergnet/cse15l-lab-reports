@@ -5,9 +5,9 @@
 
 [The mdp repo that I reviewed](https://github.com/Stocktocon/markdown-parse)
 
-testing these
-[snip1](snip1.md)
-[snip2](snip2.md)
+Testing these snips:\
+[snip1](snip1.md)\
+[snip2](snip2.md)\
 [snip3](snip3.md)
 
 
@@ -82,16 +82,16 @@ java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[a
   * This test should produce the links: "https://www.twitter.com", "https://ucsd-cse15l-w22.github.io/", and "https://cse.ucsd.edu/"
 * How I turned this into a test:
   
-![Snip3](snip3.PNG)
+![Snip3](snip3.1.PNG)
 
 * For my implementation:
   * The test failed and here is the specific part of the JUnit output that shows the test failure:
 
 ```
 3) testSnipet3(MarkdownParseTest)
-java.lang.AssertionError: expected:<[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]> but was:<[
+java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[
     https://www.twitter.com
-,
+, 
     https://ucsd-cse15l-w22.github.io/
 , github.com
 
@@ -114,7 +114,7 @@ And there's still some more text after that.
 
 ```
 3) testSnipet3(MarkdownParseTest)
-java.lang.AssertionError: expected:<[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]> but was:<[
+java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[
     https://www.twitter.com
 ,
     https://ucsd-cse15l-w22.github.io/
@@ -150,4 +150,6 @@ _In my opinoin I could add a change in my program less than 10 lines that would 
 _For the second snip this one could also be fixed using less than 10 lines. My program had troubles with the second and third line of the snipet. These two issues can be fixed by adding a counter which increases when a bracket is opened and decreases when it is closed. If one of the type is closed when one of the other type was just opened, this should not make a link. This counter could be added for the brackets and the parenthesis._
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+__
 
