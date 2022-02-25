@@ -8,7 +8,7 @@
 
 # Snippet 1:
 * What it should produce:
-  * This test should produce the links: "'google.com", "google.com", and "ucsd.edu"
+  * This test should produce the links: "%60google.com", "google.com", and "ucsd.edu"
 * How I turned this into a test:
   
 ![Snip1](snip1.PNG)
