@@ -79,7 +79,7 @@ java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[a
 
 # Snippet 3:
 * What it should produce:
-  * This test should produce the links: "https://www.twitter.com", "https://ucsd-cse15l-w22.github.io/", and "https://cse.ucsd.edu/"
+  * This test should only produce the link: "https://ucsd-cse15l-w22.github.io/"
 * How I turned this into a test:
   
 ![Snip3](snip3.1.PNG)
@@ -88,7 +88,7 @@ java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[a
   * The test failed and here is the specific part of the JUnit output that shows the test failure:
 
 ```
-3) testSnipet3(MarkdownParseTest)
+1) testSnipet3(MarkdownParseTest)
 java.lang.AssertionError: expected:<[https://ucsd-cse15l-w22.github.io/]> but was:<[
     https://www.twitter.com
 , 
