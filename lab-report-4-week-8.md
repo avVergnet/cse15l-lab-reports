@@ -3,7 +3,7 @@
 # Links
 My mdp repo is: TODO ADD MINE
 
-The mdp repo that I reviewed is: [https://github.com/Stocktocon/markdown-parse](https://github.com/Stocktocon/markdown-parse)
+[The mdp repo that I reviewed](https://github.com/Stocktocon/markdown-parse)
 
 
 # Snippet 1:
