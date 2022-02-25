@@ -151,5 +151,5 @@ _For the second snip this one could also be fixed using less than 10 lines. My p
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
-__
+_For test snipet3, I am not sure that I can fix it in less than 10 lines. I would need to implement a checker that makes sure that if the closing paren or opening paren is not in the same line, it is not more than one line away. By that I mean that the closing paren can be one line under but not empty line then closing paren. I am not sure how I would be able to go about this but I think it in less than 10 lines it would be complicated._
 
