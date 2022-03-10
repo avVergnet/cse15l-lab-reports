@@ -1,1 +1,22 @@
  <font size="12"> Lab Report 5 Week 10</font>
+
+ * How you found the tests with different results (Did you use diff on the results of running a bash for loop? Did you search through manually? Did you use some other programmatic idea?)
+
+I ran the bash: script.sh and manually looked at some test cases that looked interesting and could produce interesting debugging situations.
+
+# Test 577
+As I was looking throught the output of script.sh, I found that the test case 577 looked interesting. So I decided to test copy and paste the inside and put it in VS code so that I could use the preview to see how markdown rendred it. This is the inside:
+
+```
+![foo](train.jpg)
+```     
+
+Markdown considers this as a picture because there is an exclamation mark in front of the link. Therefore the expected output is an empty arrayList.
+
+The implementation provided to us previously considered this as a link and outputed: train.jpg.
+
+![](cap1.PNG)
+
+My implementation has a exclamation mark checker and did not consider this as a link as it detected the exclamation mark. It outputed this:
+
+![](cap2.PNG)
