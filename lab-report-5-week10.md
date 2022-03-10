@@ -20,3 +20,7 @@ The implementation provided to us previously considered this as a link and outpu
 My implementation has a exclamation mark checker and did not consider this as a link as it detected the exclamation mark. It outputed this:
 
 ![](cap2.PNG)
+
+In my code, there is an if statement in case the link is not the first code on the line. If it is not, my code check if there is an exclamation mark to handle pictures as they have a similar format to links in markdown. This can be fixed in the provided code by using a similar checker as the one I used in my own code which looks like this:
+
+![](cap3.PNG)
